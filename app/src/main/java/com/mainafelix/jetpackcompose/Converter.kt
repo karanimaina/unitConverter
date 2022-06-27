@@ -5,7 +5,7 @@ data class Conversion(
     val description:String,
     val convertFrom:String,
     val convertTo:String,
-    val multiplyBy:String,
+    val multiplyBy: Double,
 ){
 
 }
