@@ -19,7 +19,7 @@ fun BaseScreen(
 ){
     var  list  = converterViewModel.getConversion()
     Column(modifier = modifier.padding(10.dp)) {
-        TopScreen()
+        TopScreen(list)
         Spacer(modifier =modifier.height(10.dp) )
         HistoryScreen()
         
