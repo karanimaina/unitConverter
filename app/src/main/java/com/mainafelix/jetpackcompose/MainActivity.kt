@@ -20,7 +20,7 @@ class MainActivity : ComponentActivity() {
             JetpackComposeTheme {
                Surface(modifier = Modifier.fillMaxWidth(),
                color = MaterialTheme.colors.background) {
-
+                   BaseScreen()
                 }
 
               
