@@ -21,11 +21,11 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun  InputBlock(
-//    conversion: Conversion,
-//    InputText: MutableState<String>,
-//    modifier: Modifier
+    conversion: Conversion,
+    InputText: MutableState<String>,
+    modifier: Modifier
 ){
-Column(modifier = modifier.padding(0.dp,20.dp,0.dp,0.dp)){
+//Column(modifier = modifier.padding(0.dp,20.dp,0.dp,0.dp)){
     Row(modifier = modifier.fillMaxWidth()) {
         TextField(value = InputText.value, onValueChange ={
             InputText.value= it
