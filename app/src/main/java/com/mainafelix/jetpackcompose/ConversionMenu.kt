@@ -22,8 +22,8 @@ fun ConversionMenu(list: List<Conversion>,modifier: Modifier = Modifier){
     // define the states
     var displayText by remember { mutableStateOf("Select the conversion type")}
     var textFieldSize by remember { mutableStateOf(Size.Zero)} //To assign dropdown the same width as the TextField
-//    var expanded by remember { mutableStateOf(false)}
-    val icon = if(expanded) Icons.Filled.KeyboardArrowUp else Icons.Filled.KeyboardArrowDown
+    var expanded by remember { mutableStateOf(false)}
+//    val icon = if(expanded) Icons.Filled.KeyboardArrowUp else Icons.Filled.KeyboardArrowDown
     OutlinedTextField(value = displayText, onValueChange = {displayText = it}, textStyle = TextStyle(fontSize = 20.sp, fontWeight = FontWeight.Bold),
         modifier = Modifier
             .fillMaxWidth()
