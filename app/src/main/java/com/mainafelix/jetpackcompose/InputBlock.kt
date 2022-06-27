@@ -26,8 +26,8 @@ fun  InputBlock(
     modifier: Modifier
 ){
 Column(modifier = modifier.padding(0.dp,20.dp,0.dp,0.dp)){
-//    Row(modifier = modifier.fillMaxWidth()) {
-        TextField(value = InputText.value, onValueChange ={
+    Row(modifier = modifier.fillMaxWidth()) {
+        TextField(value = InputText.value, onValueChange = {
             InputText.value= it
         }, modifier = modifier.fillMaxWidth(0.65F),
         keyboardOptions = KeyboardOptions(
