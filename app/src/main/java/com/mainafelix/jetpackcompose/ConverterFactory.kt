@@ -9,9 +9,6 @@ class ConverterViewModel:ViewModel() {
         Conversion(3,"yards to metres","yd","n",0.9144),
         Conversion(4,"metres to yards","m","yd",1.09361),
         Conversion(5,"miles to kilometres","mi" ,"km",1.60934),
-        Conversion(5,"kilograms to miles","km","mi",8.521371)
-
-
-
+        Conversion(6,"kilograms to miles","km","mi",8.521371)
         )
 }
