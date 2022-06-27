@@ -45,7 +45,6 @@ DropdownMenu(expanded = expanded, onDismissRequest = { expanded = false }, modif
         DropdownMenuItem(onClick = { displayText = conversion.description
             expanded = false }) {
             Text(text = conversion.description, fontSize = 20.sp, fontWeight = FontWeight.Bold)
-           
         }
     }
 
