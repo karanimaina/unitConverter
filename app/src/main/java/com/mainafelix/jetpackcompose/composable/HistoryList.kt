@@ -1,6 +1,7 @@
 package com.mainafelix.jetpackcompose.composable
 
 
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
@@ -15,7 +16,7 @@ fun HistoryList(
     modifier: Modifier= Modifier
 
 ){
-    LazyColumn{
+    LazyColumn(modifier.fillMaxWidth()){
         items(
             items = list.value, key = {item ->item.id  }
         ){
