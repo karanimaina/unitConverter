@@ -2,7 +2,7 @@ package com.mainafelix.jetpackcompose.data
 
 import kotlinx.coroutines.flow.Flow
 
-class ConverterResultImplementation(private val dao: ConverterDao) :ConverterRepository{
+class ConverterRepositoryImplementation(private val dao: ConverterDao) :ConverterRepository{
     override suspend fun insertResult(result: ConversionResult) {
       dao.insertResult(result)
     }
@@ -11,7 +11,7 @@ class ConverterResultImplementation(private val dao: ConverterDao) :ConverterRep
    dao.deleteResult(result)
     }
 
-    override suspend fun deleteAllResults(result: ConversionResult) {
+    override suspend fun deleteAllResults() {
  dao.deleteAll()
     }
 
