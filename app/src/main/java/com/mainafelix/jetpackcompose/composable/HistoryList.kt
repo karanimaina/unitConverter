@@ -15,13 +15,13 @@ fun HistoryList(
     modifier: Modifier= Modifier
 
 //){
-//    LazyColumn{
-//        items(
-//            items = list.value, key = {item ->item.id  }
-//        ){
-//            item ->
-//            HistoryItem(message1 = item.message1, message2 =item.message2, onClose = {onCloseTask(item)} )
-//        }
-//    }
+    LazyColumn{
+        items(
+            items = list.value, key = {item ->item.id  }
+        ){
+            item ->
+            HistoryItem(message1 = item.message1, message2 =item.message2, onClose = {onCloseTask(item)} )
+        }
+    }
 
 }
