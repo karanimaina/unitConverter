@@ -1,4 +1,7 @@
 package com.mainafelix.jetpackcompose
 
-class VewModelFactory {
+import androidx.lifecycle.ViewModelProvider
+import com.mainafelix.jetpackcompose.data.ConverterRepository
+
+class VewModelFactory(private val  repository:ConverterRepository):ViewModelProvider.NewInstanceFactory(){
 }
