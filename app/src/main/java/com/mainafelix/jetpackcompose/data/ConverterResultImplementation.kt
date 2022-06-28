@@ -1,4 +1,4 @@
 package com.mainafelix.jetpackcompose.data
 
-class ConverterResultImplementation {
+class ConverterResultImplementation :ConverterRepository{
 }
