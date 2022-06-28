@@ -29,6 +29,9 @@ fun TopScreen(list: List<Conversion>) {
         //rouding down runds torwards  0
         df.roundingMode = RoundingMode.DOWN
         val  roundingResult = df.format(result)
+        val message1 = "${typedValue.value}  ${selectedConversion.value!!.convertFrom}"
+        val message2 ="$roundingResult ${selectedConversion.value!!.convertTo}"
+       ResultBlock(message1 = message1, message2 =message2 )
 
 
     }

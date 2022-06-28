@@ -12,7 +12,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
 @Composable
-fun ReturnBlock(message1:String,message2: String,modifier: Modifier = Modifier){
+fun ResultBlock(message1:String,message2: String,modifier: Modifier = Modifier){
     Card (elevation = 20.dp,
     modifier = modifier.padding(0.dp,20.dp,0.dp,0.dp)){
         Column(modifier = modifier.padding(10.dp)) {
