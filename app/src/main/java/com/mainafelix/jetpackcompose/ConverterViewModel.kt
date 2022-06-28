@@ -2,8 +2,9 @@ package com.mainafelix.jetpackcompose
 
 import androidx.lifecycle.ViewModel
 import com.mainafelix.jetpackcompose.composable.Conversion
+import com.mainafelix.jetpackcompose.data.ConverterRepository
 
-class ConverterViewModel:ViewModel() {
+class ConverterViewModel(private val  repository: ConverterRepository):ViewModel() {
     fun getConversion() = listOf(
         Conversion(1,"pounds to kilogram","lbs","kg",0.453592),
         Conversion(2,"kilograms to pounds","kg","lbs",2.20462),
