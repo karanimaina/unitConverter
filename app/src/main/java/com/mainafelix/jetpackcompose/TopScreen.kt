@@ -1,5 +1,6 @@
 package com.mainafelix.jetpackcompose
 
+import android.util.Log
 import androidx.compose.runtime.*
 
 @Composable
@@ -12,6 +13,8 @@ fun TopScreen(list: List<Conversion>) {
         selectedConversion.value = it
     }
     selectedConversion.value?.let { 
-        InputBlock(conversion = it, InputText = inputText )
+       InputBlock(conversion = it, InputText = inputText){inputText ->
+           Log.i("Tag","user typed $inputText")
+       }
     }
 }
