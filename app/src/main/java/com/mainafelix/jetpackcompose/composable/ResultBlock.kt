@@ -18,7 +18,6 @@ fun ResultBlock(message1:String,message2: String,modifier: Modifier = Modifier){
         Column(modifier = modifier.padding(10.dp)) {
             Text(text = message1,
             fontSize = 28.sp)
-
             Text(text =message2 ,
             fontSize = 28.sp,
                 color= Color.Blue,
