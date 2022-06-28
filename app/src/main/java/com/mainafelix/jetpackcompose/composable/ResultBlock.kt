@@ -1,4 +1,4 @@
-package com.mainafelix.jetpackcompose
+package com.mainafelix.jetpackcompose.composable
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding

@@ -1,4 +1,4 @@
-package com.mainafelix.jetpackcompose
+package com.mainafelix.jetpackcompose.data
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -16,9 +16,10 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.unit.toSize
+import com.mainafelix.jetpackcompose.composable.Conversion
 
 @Composable
-fun ConversionMenu(list: List<Conversion>,modifier: Modifier = Modifier,convert :(Conversion)-> Unit){
+fun ConversionMenu(list: List<Conversion>, modifier: Modifier = Modifier, convert :(Conversion)-> Unit){
     // define the states
     var displayText by remember { mutableStateOf("Select the conversion type")}
     var textFieldSize by remember { mutableStateOf(Size.Zero)} //To assign dropdown the same width as the TextField

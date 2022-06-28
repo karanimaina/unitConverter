@@ -1,4 +1,4 @@
-package com.mainafelix.jetpackcompose
+package com.mainafelix.jetpackcompose.composable
 
 data class Conversion(
     val id:Int,

@@ -1,6 +1,7 @@
 package com.mainafelix.jetpackcompose
 
 import androidx.lifecycle.ViewModel
+import com.mainafelix.jetpackcompose.composable.Conversion
 
 class ConverterViewModel:ViewModel() {
     fun getConversion() = listOf(

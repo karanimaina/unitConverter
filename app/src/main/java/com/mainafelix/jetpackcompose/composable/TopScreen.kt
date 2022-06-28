@@ -1,7 +1,8 @@
-package com.mainafelix.jetpackcompose
+package com.mainafelix.jetpackcompose.composable
 
 import android.util.Log
 import androidx.compose.runtime.*
+import com.mainafelix.jetpackcompose.data.ConversionMenu
 import java.math.RoundingMode
 import java.text.DecimalFormat
 
@@ -31,8 +32,6 @@ fun TopScreen(list: List<Conversion>) {
         val  roundingResult = df.format(result)
         val message1 = "${typedValue.value}  ${selectedConversion.value!!.convertFrom}"
         val message2 ="$roundingResult ${selectedConversion.value!!.convertTo}"
-       ResultBlock(message1 = message1, message2 =message2 )
-
-
+        ResultBlock(message1 = message1, message2 =message2 )
     }
 }

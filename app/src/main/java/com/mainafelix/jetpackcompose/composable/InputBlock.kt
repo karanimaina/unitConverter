@@ -1,4 +1,4 @@
-package com.mainafelix.jetpackcompose
+package com.mainafelix.jetpackcompose.composable
 
 import android.content.Context
 import android.widget.Toast
@@ -16,6 +16,7 @@ import androidx.compose.ui.text.input.KeyboardCapitalization
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.mainafelix.jetpackcompose.composable.Conversion
 
 @Composable
 fun  InputBlock(
