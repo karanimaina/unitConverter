@@ -23,7 +23,7 @@ import androidx.compose.ui.unit.sp
 fun  InputBlock(
     conversion: Conversion,
     InputText: MutableState<String>,
-    modifier: Modifier
+    modifier: Modifier = Modifier
 ){
 Column(modifier = modifier.padding(0.dp,20.dp,0.dp,0.dp)){
     Row(modifier = modifier.fillMaxWidth()) {
