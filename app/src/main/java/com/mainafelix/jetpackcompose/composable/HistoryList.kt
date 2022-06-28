@@ -14,7 +14,7 @@ fun HistoryList(
      onCloseTask :(ConversionResult) -> Unit,
     modifier: Modifier= Modifier
 
-//){
+){
     LazyColumn{
         items(
             items = list.value, key = {item ->item.id  }
