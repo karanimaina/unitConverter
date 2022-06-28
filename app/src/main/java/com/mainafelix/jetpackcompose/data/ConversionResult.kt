@@ -1,5 +1,9 @@
 package com.mainafelix.jetpackcompose.data
 
 import android.os.Message
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-data class ConversionResult(val id:Int,val message1 :String,val message2:String)
+@Entity(tableName ="result" )
+data class ConversionResult(
+    @PrimaryKey (autoGenerate = true) val id:Int, val message1 :String, val message2:String)
